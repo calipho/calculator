@@ -7,13 +7,21 @@
 def main():
 	firstnumber = input("Enter the first number: ")
 	print(firstnumber.isdigit())
-	firstnumber = int(firstnumber)
+    firstnumber = int(firstnumber)
 	secondnumber = input("Enter the second number: ")
 	print(secondnumber.isdigit())
 	secondnumber = int(secondnumber)
 	operation = input("Choose the operation (+, -, /, *): ")
 	if operation == "*":
 		print("The answer is", firstnumber * secondnumber)
+	elif operation == "/":
+		print("The answer is", firstnumber / secondnumber)
+	elif operation == "+":
+		print("The answer is", firstnumber + secondnumber)
+	elif operation == "-":
+		print("The answer is", firstnumber - secondnumber)
+	else:
+		print("Invalid operation")
 	pass
 	
 
